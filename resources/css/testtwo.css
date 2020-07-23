@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fdfdfd;
+    color: #010000;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    background-color: #fdfdfd;
+}
+
+.new-Nav {
+    height: 12vh;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: #fdfdfd;
+    
+}
+
+
+.nav-bar{
+    padding-top: 4.5vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 150%;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 900;
+    color: #010000;
+    letter-spacing: 1px;
+}
+
+.nav-links li {
+    display: inline;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav-links li a:link, .nav-links li a:visited {
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #010000;
+    text-transform: uppercase;
+    font-size: 70%;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-links li a:active, .nav-links li a:hover {
+    border-bottom: 2px solid #010000;
+}
+
+.connect-button {
+    text-align: center;
+}
+
+.connect-button button {
+    background-color: #F7F7F7;
+    text-transform: uppercase;
+    border: 2px solid #010000;
+    font-size: 60%;
+    padding: 7px 7px;
+    letter-spacing: 1.5px;
+    transition: color 0.2s;
+}
+
+.connect-button button:hover {
+    background-color: #010000;
+    text-transform: uppercase;
+    border: 2px solid #010000;
+    font-size: 60%;
+    padding: 7px 7px;
+    letter-spacing: 1.5px;
+    color: #F7F7F7
+}
+
+/*For Responsive Nav Bar*/
+.Connect-Slidebar {
+    display: none;
+}
+
+.burger{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #1d1c1c;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+.checkbtn{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+@media (max-width: 375px){
+
+    .brand-logo{
+        line-height: 90px;
+    }
+    .Connect-Slidebar {
+        display: initial;
+    }
+    .connect-button{
+        display: none;
+    }
+
+    .nav-bar{
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+    }
+    
+    .nav-links {
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+    }
+    
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #444444;
+        top: 12vh;
+        left: -100%;
+        transition: all .5s;
+    }
+
+    .nav-links li{
+        display: block;
+        line-height: 8vh;
+        text-align: center;
+      }
+      .nav-links li a:link, .nav-links li a:visited{
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 700;
+    opacity: 1;
+      }
+
+      #check:checked ~ ul{
+        left: 0;
+      }
+}   

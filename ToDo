@@ -1,0 +1,33 @@
+To do:-
+Products and services page ----Done
+Change CSS for common styles - eg. all paragraphs should have same font size -----Done
+Change width of entire site - remove white spaces ------Done
+Find out the color of background ------- Done
+Check alt for all images ------Do it after getting all images
+Gradient color on bottom border of header nav----- Done
+Animation for services - Scrolling up
+Scrollbar below products webkit use Plugin in brackets
+Footer - figure out how to keep company name and desc in same column
+Decide widths of the phones for responsiveness ----- Done
+Get font from designer
+All images are enabling right scroll - fit it to screen
+
+
+
+Same styles
+all paras on products page, services page, features section (home page), products section (home page) 
+Home page - Hero, features, products, madewith and   
+
+
+Widths for Responsive
+320 P 568 i5
+375 P 667 6/7/8
+414 P 736 6/7/8+
+375 P 812 X
+
+768 P 1024 pad
+1024 P 1366 pad pro
+
+Samsung
+360
+340
